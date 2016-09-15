@@ -1,116 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
-    android:id="@+id/background"
-    >
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.roshan.sgpacounter.MainActivity"
+    android:background="@color/foreground_material_dark">
 
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Subject "
-        android:id="@+id/SnumtextView"
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
         android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="46dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Result"
-        android:id="@+id/ResulttextView"
-        android:layout_below="@+id/SubAradioButton"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <RadioButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="SubjectA"
-        android:id="@+id/SubAradioButton"
-        android:checked="false"
-        android:layout_below="@+id/SnumtextView"
-        android:layout_marginTop="44dp" />
-
-    <RadioButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="SubjectB"
-        android:id="@+id/SubBradioButton"
-        android:checked="false"
-        android:layout_alignTop="@+id/SubAradioButton"
-        android:layout_toRightOf="@+id/SubAradioButton"
-        android:layout_toEndOf="@+id/SubAradioButton" />
-
-    <RadioButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="SubjectC"
-        android:id="@+id/SubCradioButton"
-        android:checked="false"
-        android:layout_alignTop="@+id/SubBradioButton"
-        android:layout_toRightOf="@+id/SubBradioButton"
-        android:layout_toEndOf="@+id/SubBradioButton" />
-
-    <RadioButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="A"
-        android:id="@+id/AradioButton"
-        android:layout_alignParentStart="true"
-        android:checked="false"
-        android:layout_below="@+id/ResulttextView"
-        android:layout_alignParentLeft="true" />
-
-    <RadioButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="B"
-        android:id="@+id/BradioButton"
-        android:checked="false"
-        android:layout_below="@+id/AradioButton"
-        android:layout_alignParentLeft="true" />
-
-    <RadioButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="C"
-        android:id="@+id/CradioButton"
-        android:checked="false"
-        android:layout_below="@+id/BradioButton"
-        android:layout_alignParentLeft="true" />
-
-    <RadioButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="F"
-        android:id="@+id/FradioButton"
-        android:checked="false"
-        android:layout_below="@+id/CradioButton"
-        android:layout_alignParentLeft="true" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="ADD"
-        android:id="@+id/Addbutton"
-        android:layout_below="@+id/FradioButton"
-        android:layout_centerHorizontal="true" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Large Text"
-        android:id="@+id/GPA"
-        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="48dp" />
+        android:background="@color/colorPrimary"
+        android:weightSum="1"
+        android:id="@+id/linearLayout">
 
+        <com.roshan.sgpacounter.RoundedImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:id="@+id/imageView"
+            android:layout_margin="15dp"
+            android:layout_gravity="left|center_vertical"
+            android:background="@drawable/profile_round"
+            android:src="@drawable/photo" />
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="M.R.U.Maddumage"
+                android:id="@+id/textView5"
+                android:layout_gravity="right"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="15dp"
+                android:textColor="@android:color/primary_text_dark" />
+
+            <TextView
+                android:layout_width="97dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="134092P"
+                android:id="@+id/textView6"
+                android:layout_gravity="center"
+                android:textColor="@android:color/secondary_text_dark"
+                android:layout_below="@+id/textView5"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView3"
+            android:layout_alignBottom="@+id/textView6"
+            android:layout_toRightOf="@+id/textView5"
+            android:layout_toEndOf="@+id/textView5"
+            android:src="@drawable/abc_ic_menu_moreoverflow_mtrl_alpha"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginLeft="30dp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerInParent="true">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ADD Result"
+            android:id="@+id/btnAdd"
+            android:background="@drawable/button_round"
+            android:padding="10dp"
+            android:layout_gravity="center_vertical"
+            android:textColor="@android:color/primary_text_dark"
+            android:layout_marginBottom="46dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/button"
+            android:layout_toStartOf="@+id/button"
+            android:layout_marginRight="10dp" />
+
+        <com.roshan.sgpacounter.RoundedImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:id="@+id/imageView2"
+            android:src="@drawable/photo"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="59dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="4.20"
+            android:id="@+id/textView7"
+            android:layout_alignTop="@+id/imageView2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="91dp"
+            android:typeface="sans"
+            android:textStyle="bold"
+            android:textSize="80dp"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show"
+            android:id="@+id/button"
+            android:background="@drawable/button_round"
+            android:padding="10dp"
+            android:layout_gravity="center_vertical"
+            android:textColor="@android:color/primary_text_dark"
+            android:layout_alignTop="@+id/btnAdd"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Manage"
+            android:id="@+id/button2"
+            android:background="@drawable/button_round"
+            android:padding="10dp"
+            android:layout_gravity="center_vertical"
+            android:textColor="@android:color/primary_text_dark"
+            android:layout_alignTop="@+id/button"
+            android:layout_toRightOf="@+id/button"
+            android:layout_toEndOf="@+id/button"
+            android:layout_marginLeft="10dp" />
+    </RelativeLayout>
 </RelativeLayout>
