@@ -1,0 +1,116 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:id="@+id/background"
+    >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Subject "
+        android:id="@+id/SnumtextView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="46dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Result"
+        android:id="@+id/ResulttextView"
+        android:layout_below="@+id/SubAradioButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SubjectA"
+        android:id="@+id/SubAradioButton"
+        android:checked="false"
+        android:layout_below="@+id/SnumtextView"
+        android:layout_marginTop="44dp" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SubjectB"
+        android:id="@+id/SubBradioButton"
+        android:checked="false"
+        android:layout_alignTop="@+id/SubAradioButton"
+        android:layout_toRightOf="@+id/SubAradioButton"
+        android:layout_toEndOf="@+id/SubAradioButton" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SubjectC"
+        android:id="@+id/SubCradioButton"
+        android:checked="false"
+        android:layout_alignTop="@+id/SubBradioButton"
+        android:layout_toRightOf="@+id/SubBradioButton"
+        android:layout_toEndOf="@+id/SubBradioButton" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A"
+        android:id="@+id/AradioButton"
+        android:layout_alignParentStart="true"
+        android:checked="false"
+        android:layout_below="@+id/ResulttextView"
+        android:layout_alignParentLeft="true" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="B"
+        android:id="@+id/BradioButton"
+        android:checked="false"
+        android:layout_below="@+id/AradioButton"
+        android:layout_alignParentLeft="true" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="C"
+        android:id="@+id/CradioButton"
+        android:checked="false"
+        android:layout_below="@+id/BradioButton"
+        android:layout_alignParentLeft="true" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="F"
+        android:id="@+id/FradioButton"
+        android:checked="false"
+        android:layout_below="@+id/CradioButton"
+        android:layout_alignParentLeft="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD"
+        android:id="@+id/Addbutton"
+        android:layout_below="@+id/FradioButton"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/GPA"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="48dp" />
+
+</RelativeLayout>
